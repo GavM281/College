@@ -1,3 +1,3 @@
 # Uni
-Just a personal repo for some college stuff and to practice using github.
-Currently in 2nd year of computer science.
+Work from my first and second year in Maynooth University.
+Currently in 3rd year of Computer Science and Software Engineering.
