@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "609c292dfde8121cf4215e0d"
+  },
+  "user": "Joe",
+  "model": "Galaxy"
+},{
+  "_id": {
+    "$oid": "609c4af72867ec25749f39d6"
+  },
+  "user": "James",
+  "model": "iPhone"
+}]

@@ -1,0 +1,15 @@
+[{
+  "_id": {
+    "$oid": "6085fe9a348bb11e98cd725d"
+  },
+  "manu": "Samsung",
+  "model": "Galaxy",
+  "price": "749"
+},{
+  "_id": {
+    "$oid": "6085fea5348bb11e98cd725e"
+  },
+  "manu": "Apple",
+  "model": "iPhone",
+  "price": "899"
+}]
