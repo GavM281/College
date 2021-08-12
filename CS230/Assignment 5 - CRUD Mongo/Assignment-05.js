@@ -1,9 +1,3 @@
-
-// Based on Johns code
-
-// Tested using firefox version 87.0 on Windows 10
-
-
 // Load the NodeJS modules required (ExpressJS)
 var express = require("express"); // using ExpressJS package
 var bodyParser = require("body-parser"); // using body-parser for parsing!
@@ -22,42 +16,26 @@ process.on("SIGINT", function () {
   process.exit();
 });
 
-//
-// Setup up the MongoDB connection - note that this sets up a variable
-// client which is used to make connections, etc. The connection code
-// was generated and copied from the MongoDB Atlas Cluster ("Connect"
-// botton). You need to have already set this up and have created a
-// user and database callec "test". My user is called Admin user.
-// I have created a collection called "AjaxAPIDemo" that will hold the data.
-//
 
+// Setup up the MongoDB connection
 const MongoClient = require("mongodb").MongoClient;
-const uri =
-  "mongodb+srv://admin:adminpw@cluster0.tt6zh.mongodb.net/assign5?retryWrites=true&w=majority";
+const uri = ""; // Removed from Github upload
 
-//
+
 // This section manages a collection-based (mogodb) database connection
-// This Demo services the routes using ExpressJS. Notice that with MongoDB
-// we organise the app by setting up the connection and issue the ExpressJS
-// commands "inside" the callback function. When we worked with MySQL the
-// database setup code was outside and before ExpressJS services.
-//
-
+// This Demo services the routes using ExpressJS.
 MongoClient.connect(uri, { useUnifiedTopology: true })
   .then((client) => {
 
-    // two different collections to keep users and phones seperate
+    // Two different collections to keep users and phones seperate
     const db = client.db("assign5");
     const usersCollection = db.collection('User');
     const phoneCollection = db.collection('Phone');
 
     console.log("Database (assign5): Connected!\n");
-    //
+  
     // If no API call made then the default route is / so
     // just return the default index.html file to the user.
-    // This contains the forms, etc. for making the CRUD
-    // requests (only Create and Retrieve implemented)
-    //
     app.get("/", function (req, res) {
       res.sendFile(__dirname + "/index.html");
     });
@@ -81,7 +59,7 @@ MongoClient.connect(uri, { useUnifiedTopology: true })
       console.log(
         `USER RECORD INSERTED: ['${userData.firstname}','${userData.surname}','${userData.email}']\n`
       );
-      // respond to the user with confirmation message
+      // Respond to the user with confirmation message
       res.send(
         "User (" +
           userData.firstname +
@@ -107,7 +85,7 @@ MongoClient.connect(uri, { useUnifiedTopology: true })
       console.log(
         `USER RECORD INSERTED: ['${phoneData.manu}','${phoneData.model}','${phoneData.phone}']\n`
       );
-      // respond to the user with confirmation message
+      // Respond to the user with confirmation message
       res.send(
         "Phone (" +
           phoneData.manu +
