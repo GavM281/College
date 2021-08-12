@@ -1,0 +1,29 @@
+[{
+  "_id": {
+    "$oid": "609d1ad75888613d0c49dac9"
+  },
+  "date": "12/3/2012",
+  "time": "5:30",
+  "client": "Bob",
+  "therapist": "John",
+  "fee": "39",
+  "session": "2",
+  "duration": "30",
+  "notes": "Good session",
+  "sesDur": "30",
+  "sesNo": "4",
+  "type": "Electrotherapy"
+},{
+  "_id": {
+    "$oid": "609da5289956a744e8ab8ea2"
+  },
+  "date": "12/12/2012",
+  "time": "8:56",
+  "client": "Joe",
+  "therapist": "Jane",
+  "fee": "59",
+  "sesNo": "1",
+  "sesDur": "30",
+  "type": "Assessment",
+  "notes": "Stuff goes here"
+}]
