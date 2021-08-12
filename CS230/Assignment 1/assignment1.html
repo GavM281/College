@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food pyramid</title>
+    <link rel="stylesheet" type="text/css" href="assignment1.css">
+</head>
+<body>
+
+    <div class = "select" onclick = "rad();">
+        <h3> Food pyramid</h3>
+        <hr>
+        <label for="over4">Above 4</label>
+        <input type="radio" id="over4" name="age" value="over4" checked="checked">
+        <input type="radio" id="under4" name="age" value="under4">
+        <label for="under4">Under 4</label><br>
+    </div>
+    <br>
+
+    <div class = "row0 rows"> </div>
+
+    <div class = "row1 rows">
+        <span class="wrapper">
+            <button onClick="subRow1();" id="subRow1" class="hide circle">-</button>
+            <span id="row1Display" class="display">0</span>
+            <button onClick="addRow1();" id="addRow1" class="hide circle">+</button>
+        </span>
+    </div>
+
+
+    <div class = "row2 rows">
+        <span class="wrapper">
+            <button onClick="subRow2();" id="subRow2" class="hide circle">-</button>
+            <span id="row2Display" class="display">0</span>
+            <button onClick="addRow2();" id="addRow2" class="hide circle">+</button>
+        </span>
+    </div>
+
+    <div class = "row3 rows">
+        <span class="wrapper">
+            <button onClick="subRow3();" id="subRow3" class="hide circle">-</button>
+            <span id="row3Display" class="display">0</span>
+            <button onClick="addRow3();" id="addRow3" class="hide circle">+</button>
+        </span>
+    </div>
+
+    <div class = "row4 rows">
+        <span class="wrapper">
+            <button onClick="subRow4();" id="subRow4" class="hide circle">-</button>
+            <span id="row4Display" class="display">0</span>
+            <button onClick="addRow4();" id="addRow4" class="hide circle">+</button>
+        </span>
+    </div>
+
+    <div class = "row5 rows">
+        <span class="wrapper">
+            <button onClick="subRow5();" id="subRow5" class="hide circle">-</button>
+            <span id="row5Display" class="display">0</span>
+            <button onClick="addRow5();" id="addRow5" class="hide circle">+</button>
+        </span>
+    </div>
+
+    <div class = "row6 rows">
+        <span class="wrapper">
+            <button onClick="subRow6();" id="subRow6" class="hide circle">-</button>
+            <span id="row6Display" class="display">0</span>
+            <button onClick="addRow6();" id="addRow6" class="hide circle">+</button>
+        </span>
+    </div>
+
+
+    <h4 class="center"> My food pyramid for:</h4>
+    <input type="date" class="center" value="date">
+
+    <script type="text/javascript" src="assignment1.js"></script>
+</body>
+</html>

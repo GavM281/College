@@ -1,0 +1,41 @@
+table{
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+th{
+    background-color: gray;
+    font-size: 20px;
+    width: 140px;
+    min-width: 120px;
+}
+
+.middle{
+    text-align: center;
+}
+
+td{
+    border-bottom: 1px solid black;
+}
+
+tr:nth-child(odd) { /*https://www.w3schools.com/css/css_table_style.asp */
+    background-color: #d4d4d4;
+}
+
+.name{
+    min-width: 200px;
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+.grade{
+    background: yellow;
+}
