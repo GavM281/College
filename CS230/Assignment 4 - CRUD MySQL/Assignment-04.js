@@ -1,8 +1,3 @@
-//Based on Johns code
-
-// Tested with Firefox version 87.0 on Windows 10
-// Didn't work in Chrome or edge for me
-
 // Load the NodeJS modules required
 
 var http = require("http"); // creating an API using http
@@ -14,18 +9,18 @@ var port = 8000; // port the server with listen on
 var server = http.createServer(); // create the server
 
 
-//
-// This is the new section that manages a relational (mysql) database connection
-//
 var mysql = require("mysql");
-// use YOUR credentials to create your database connection
 var con = mysql.createConnection({
-  host: "webcourse.cs.nuim.ie",
-  user: "u200315",
-  password: "eeleewoon2eeQuoo",
-  database: "cs230_u200315",
+  
+  // Removed from Github upload
+  host: "",
+  user: "",
+  password: "",
+  database: "",
+  
 });
-// And make the connection - re-used later
+
+// Connect
 con.connect(function (err) {
   if (err) throw err;
   console.log("Database (USERS): Connected!");
@@ -50,12 +45,8 @@ server.on("request", function (request, response) {
 
   // determine the route (/ or /api/user)
   switch (currentRoute) {
-    //
     // If no API call made then the default route is / so
     // just return the default index.html file to the user.
-    // This contains the forms, etc. for making the CRUD
-    // requests (only Create and Retrieve implemented)
-    //
     case "/":
       fs.readFile(__dirname + "/index.html", function (err, data) {
         // get the file and add to data
