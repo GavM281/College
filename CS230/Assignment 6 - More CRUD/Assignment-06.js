@@ -1,8 +1,3 @@
-// Based on Johns code
-
-// Tested using firefox version 88.0.1 on Windows 10
-
-
 // Load the NodeJS modules required (ExpressJS)
 var express = require("express"); // using ExpressJS package
 var bodyParser = require("body-parser"); // using body-parser for parsing!
@@ -25,8 +20,7 @@ process.on("SIGINT", function () {
 
 // Set up MongoDB connection
 const MongoClient = require("mongodb").MongoClient;
-const uri =
-  "mongodb+srv://admin:adminpw@cluster0.tt6zh.mongodb.net/assign6?retryWrites=true&w=majority";
+const uri =  ""; // Removed from Github upload
 
 
 MongoClient.connect(uri, { useUnifiedTopology: true })
@@ -39,13 +33,12 @@ MongoClient.connect(uri, { useUnifiedTopology: true })
     const orderCollection = db.collection('Orders');
 
     console.log("Database (assign6): Connected!\n");
-    //
+    
+  
     // If no API call made then the default route is / so
     // just return the default Assignment-06.html file to the user.
-    // This contains the forms, etc. for making the CRUD requests
-    //
     app.get("/", function (req, res) {
-//      res.sendFile(__dirname + "/Assignment-06.html");
+     res.sendFile(__dirname + "/Assignment-06.html");
     });
 
 
@@ -185,7 +178,6 @@ MongoClient.connect(uri, { useUnifiedTopology: true })
     app.put("/api/updatePhones", function(req, res) {
         var ObjectID = require('mongodb').ObjectID;
         var phoneData = req.body;
-//        var myquery = { manu: phoneData.currentManu, model: phoneData.currentModel};
         var myquery = { '_id':ObjectID(phoneData.phoneId)};
         var newvalues = { $set: {manu: phoneData.updateManu, model: phoneData.updateModel, price: phoneData.updatePrice} };
         phoneCollection
