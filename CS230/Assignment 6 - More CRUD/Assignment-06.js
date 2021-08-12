@@ -38,7 +38,7 @@ MongoClient.connect(uri, { useUnifiedTopology: true })
     // If no API call made then the default route is / so
     // just return the default Assignment-06.html file to the user.
     app.get("/", function (req, res) {
-     res.sendFile(__dirname + "/Assignment-06.html");
+//      res.sendFile(__dirname + "/Assignment-06.html");
     });
 
 
