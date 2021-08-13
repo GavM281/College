@@ -1,7 +1,5 @@
-package Lab3;
-
 import java.util.*;
-public class collatzBubbleSort {
+public class lab3 {
     public static void main(String args[]) {
         Scanner scan = new Scanner(System.in);
         // System.out.println("Enter start");
