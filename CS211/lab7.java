@@ -1,7 +1,7 @@
 package lab7;
 import java.util.*;
 
-public class lab7V2 {
+public class lab7 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         long input = scan.nextLong();
