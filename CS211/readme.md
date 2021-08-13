@@ -45,3 +45,6 @@ Work from CS211 - Algorithms & Data Structures at Maynooth University.
     * AI that guesses the random word picked.
 
 * **Lab 11:** - Cirular primes
+    * Circular prime number is a number that is prime no matter what order the numbers that make it up are in.
+    * Example: 1193 is a circular prime, since 1931, 9311 and 3119 all are also prime.
+    * Enter number to check below.
