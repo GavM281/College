@@ -27,30 +27,3 @@ public class Lab1 {
         }
     }
 }
-
-//        char letters[] = input.toCharArray(); // Change string to char array
-
-//        System.out.println("About to fill count with 0");
-//        for(int i = 0;i<255;i++){
-//            count[i] = 0;
-//        }
-//        System.out.println("Filled count with 0");
-//
-//        for(int i = 0;i<letters.length;i++){
-//            System.out.println("");
-//            char c = letters[i]; // Gets first character in char array letters[]
-//            System.out.println("Found char c to be: " + c);
-//
-//            int x = c-'0'; // Get value of character as int
-//            x+=48; // add 48 to be ascii
-//
-//            char f = (char)x; // verify changing int back to char gives correct char
-//            System.out.println("Found value of char c to be: " + x);
-//            System.out.println("Found letter from x to be: " + f);
-//
-//            count[x] +=1; // Increase int at index by 1
-//            System.out.println("Found count of char c to be: " + count[x]);
-//            System.out.println("");
-//        }
-//        System.out.println("Now know how often every character appears");
-////        Now know how often every character appears
