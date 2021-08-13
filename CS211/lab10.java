@@ -163,16 +163,3 @@ class Brain{
         return pick; // return letter
     }
 }
-
-// top 5:   7
-// top 4:   8
-// top 3:   10
-// top 2:   6, 11
-// top 1:   8
-// top 0:   15,
-
-// get dictionary
-//
-
-
-// 36  4fbb06ce4b8f6ac90bedd632252a4a4a3cd2b6fa0ba1fcef6448b8b0252d96c2
