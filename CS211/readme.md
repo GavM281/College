@@ -1,4 +1,4 @@
-Work from CS211 - Algorithms & Data Structures at Maynooth University.
+**Work from CS211 - Algorithms & Data Structures at Maynooth University.**
 
 
 * **Lab 1:** - Occurences of characters in a string.
