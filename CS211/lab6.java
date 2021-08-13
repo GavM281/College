@@ -1,13 +1,3 @@
-//6b9cb93bd81bc3ee973e73ed8307955aa7cdc97b629e2a123e7e23910ac0210b
-// 127
-
-//ee8bda8148898b4755c86a10216ad6c1271078f3fb2f7b1dea5ee40b4d00b7d0
-// 997
-
-
-//ee8bda8148898b4755c86a10216ad6c1271078f3fb2f7b1dea5ee40b4d00b7d0
-
-
 import java.util.*;
 import java.math.*;
 import java.math.BigInteger;
@@ -109,7 +99,6 @@ class HashTable{
 
 
 class Solution{
-
     public int find(int size, HashTable mytable, String word){
 
         //fill this in so as to minimize collisions
