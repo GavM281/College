@@ -3,6 +3,9 @@
 * **Lab 1:** Luhn algorithm
 * **Lab 3:** Primes
 * **Lab 4:** Monte Carlo
+    * Two integers are coprime if the only positive integer that divides into both of them is 1. In other words, the greatest common divisor of two coprime numbers is 1.
+    * Given a divisor of the first number and a divisor of the second number. Output an integer from 0 to 100, which is the percentage probability that the two randomly selected numbers are coprime.
+    
 * **Lab 5:** Sorting
     * In this task the input is two numbers, followed by a series of strings. Those strings must be sorted and then one particular string must be outputted. The first number denotes the quantity of strings to follow. The second number indicates which string should be outputted following the sort. For example, if it's a 3, then output the string that 
 falls in third place. If it's a 5 then output the string that falls in fifth 
