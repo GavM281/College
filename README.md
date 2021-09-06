@@ -1,4 +1,4 @@
-# Uni
+# University
 Some of my work from Maynooth University.
 Currently in 3rd year of Computer Science and Software Engineering.
 
