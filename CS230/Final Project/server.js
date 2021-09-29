@@ -25,8 +25,7 @@ process.on("SIGINT", function () {
 
 // Set up MongoDB connection
 const MongoClient = require("mongodb").MongoClient;
-const uri =
-  "mongodb+srv://admin:adminpw@cluster0.tt6zh.mongodb.net/exam?retryWrites=true&w=majority";
+const uri = ""; // Removed from GitHub upload
 
 
 MongoClient.connect(uri, { useUnifiedTopology: true })
