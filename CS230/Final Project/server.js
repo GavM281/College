@@ -1,8 +1,3 @@
-// Based on Johns code
-
-// Tested using firefox version 88.0.1 on Windows 10
-
-
 // Load the NodeJS modules required (ExpressJS)
 var express = require("express"); // using ExpressJS package
 var bodyParser = require("body-parser"); // using body-parser for parsing!
